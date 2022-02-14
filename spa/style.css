@@ -1,0 +1,23 @@
+/* --- Styling Reset --- */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- End Styling Reset --- */
+
+body header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+header h1 {
+    flex-grow: 3;
+}
