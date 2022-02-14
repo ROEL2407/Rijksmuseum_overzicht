@@ -25,7 +25,7 @@ function showInfo(data) {
     data.forEach(item => {
         tempItem = document.createElement('article');
 
-            output = '<img src="' + item.img + '" alt=""><h2>' + item.title + '</h2>';
+            output = '<div><img src="' + item.img + '" alt=""></div><h2>' + item.title + '</h2>';
 
         tempItem.innerHTML = output;
         document.getElementById('artitems').appendChild(tempItem);
