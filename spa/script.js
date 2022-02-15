@@ -1,10 +1,13 @@
 getAndRenderData()
+const display = document.getElementById('artitems');
+display.textContent = "Loading...";
 
 const artArray = [];
 
 function getAndRenderData() {
     const getURL = 'https://www.rijksmuseum.nl/api/nl/collection?key=OoTZzgc6&ps=100'
-    fetch(getURL).then(response => response.json())
+    fetch(getURL)
+        .then(response => response.json())
         .then(response => {
             console.log(response)
             response.artObjects.forEach(art => {
@@ -16,7 +19,11 @@ function getAndRenderData() {
 
                 });
             })
-            showInfo(artArray)
+            
+            display.textContent="";
+            display.classList.remove("loading");
+            showInfo(artArray);
+            click(artArray);
         }).catch(error => console.log(error))
 }
 
@@ -31,13 +38,18 @@ function showInfo(data) {
             output = '<article><div><img src="' + item.img.slice(0, -3)+"=s1000" + '" alt=""></div><h2>' + item.title + '</h2></article>';
 
         tempItem.innerHTML = output;
-        document.getElementById('artitems').appendChild(tempItem);
+        display.appendChild(tempItem);
     })
 }
-
-document.getElementsByClassName("arts").addEventListener("click", function(event){
-    event.preventDefault()
-  });
+function click(data) {
+document.getElementsByClassName("art").forEach(element=> {
+    element.addEventListener("click", function(event){
+        event.preventDefault()
+        info_output = '<article="active"><div><img src="' + item.img.slice(0, -3)+"=s1000" + '" alt=""></div><h2>' + item.title + '</h2></article>'
+        this.innerHTML = info_output;
+    });
+})
+}
 
 /* --- get all element for use --- */
 search_btn = document.getElementById("search_btn");
