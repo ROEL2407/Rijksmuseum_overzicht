@@ -122,7 +122,8 @@ article img {
 }
 
 article h2 {
-    padding-top: 30px;
+    width: 100%;
+    padding: 30px 5px 5px 5px;
     color: black;
     background-image: linear-gradient(transparent, white);
     position: absolute;
