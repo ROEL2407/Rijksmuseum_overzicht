@@ -22,7 +22,6 @@ a {
 #search.hidden {
     position: absolute;
     top: -67px;
-    z-index: -1;
     transition: 0.5s ease-in-out;
 }
 
@@ -68,12 +67,14 @@ body {
 }
 
 body header {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #000;
     color: white;
     border-bottom: 1px solid black;
+    z-index: 2;
 }
 
 header h1 {
