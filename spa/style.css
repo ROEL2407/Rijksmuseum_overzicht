@@ -22,11 +22,40 @@ a {
 #search.hidden {
     position: absolute;
     top: -67px;
+    z-index: -1;
     transition: 0.5s ease-in-out;
 }
 
 .active {
     background-color: grey;
+}
+
+article.active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.active div {
+    margin-top: 10px;
+    width: 80%;
+}
+
+article.active h2 {
+    width: fit-content;
+    padding-left: 10px;
+    position: relative;
+    background-image: none;
+}
+
+article.active {
+    padding-left: 10px;
+}
+
+article.active a {
+    color: black;
+    text-decoration: underline;
 }
 
 #search.active {
@@ -75,7 +104,7 @@ main {
 #search {
     position: absolute;
     top: -15px;
-    z-index: -1;
+    z-index: 1;
     width: 100%;
     padding: 10px 0px;
     border-bottom: 1px solid black;
@@ -86,7 +115,7 @@ main {
     transition: 1s;
 }
 
-#search input[type="submit"] {
+#search button {
     padding: 6px 10px;
     text-align: center;
     border-radius: 15px;
