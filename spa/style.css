@@ -29,38 +29,80 @@ a {
     background-color: grey;
 }
 
+/* --- Article state --- */
 article.active {
-    width: 100%;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: scale(1.2);
+    font-size: 14px;
 }
 
 article.active div {
     margin-top: 10px;
-    width: 80%;
+    height: fit-content;
+    width: 90%;
+}
+
+article.active div img {
+    height: fit-content;
 }
 
 article.active h2 {
     width: fit-content;
-    padding-left: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
     position: relative;
     background-image: none;
 }
 
-article.active {
-    padding-left: 10px;
-}
-
 article.active a {
     color: black;
+    padding: 10px 0px;
     text-decoration: underline;
 }
+
+.popOn {
+    overflow: hidden;
+}
+
+#close_popup {
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+#close_popup div {
+    position: absolute;
+    height: 10px;
+    width: 1px;
+    margin: 0;
+    background-color: black;
+    left: 50%;
+    bottom: 30%;
+}
+
+#close_popup div:first-of-type {
+    transform: rotate(45deg);
+}
+
+#close_popup div:last-of-type {
+    transform: rotate(135deg);
+}
+
+/* --- end Article state --- */
 
 #search.active {
     background-color: grey;
 }
-/* --- States --- */
+/* --- End States --- */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #333;
@@ -126,6 +168,7 @@ main {
 
 #artitems {
     z-index: -3;
+    padding-top: 15px;
 }
 
 .loading {
@@ -172,4 +215,13 @@ article h2 {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+#bg-fade {
+    position: absolute;
+    top: -15px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
 }

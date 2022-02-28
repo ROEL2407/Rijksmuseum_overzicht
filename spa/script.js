@@ -3,6 +3,7 @@ const display = document.getElementById('artitems');
 display.textContent = "Loading...";
 
 const artArray = [];
+const body = document.querySelector("body");
 
 function getAndRenderData() {
     const getURL = 'https://www.rijksmuseum.nl/api/nl/collection?key=OoTZzgc6&ps=100'
@@ -14,6 +15,7 @@ function getAndRenderData() {
                 artArray.push({
                     id: art.id,
                     title: art.title,
+                    maker: art.principalOrFirstMaker,
                     img: art.webImage.url,
                     place: art.productionPlaces,
                     link: art.links.web
@@ -47,10 +49,11 @@ function click(data) {
             event.preventDefault();
             data.forEach(item => {
                 if(element.id === item.id) {
-                    info_output = '<article class="active"><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.place + '</p><a href="' + item.link + '">' + item.link + '</a></article>'
+                    info_output = '<article class="active"><button id="close_popup"><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.maker + '</p><p>' + item.place + '</p><a href="' + item.link + '">' + item.link + '</a></article><div id="bg-fade"></div>'
                     this.innerHTML = info_output;
                 }
             })
+            body.classList.add("popOn");
         });
     })
 }
