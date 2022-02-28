@@ -8,6 +8,7 @@ Assignment<br />
 Project<br />
 [Usage](https://github.com/ROEL2407/Rijksmuseum_overzicht#usage)<br />
 [Installation](https://github.com/ROEL2407/Rijksmuseum_overzicht#installation)<br />
+[Online version](https://github.com/ROEL2407/Rijksmuseum_overzicht#online-version)<br />
 [Rubric](https://github.com/ROEL2407/Rijksmuseum_overzicht#rubric)<br />
 [Commits](https://github.com/ROEL2407/Rijksmuseum_overzicht#commits)<br />
 [Resources](https://github.com/ROEL2407/Rijksmuseum_overzicht#resources)<br />
@@ -29,6 +30,10 @@ git clone https://github.com/ROEL2407/Rijksmuseum_overzicht.git
 ```
 
 Use a local server to host the website. I use the Live server extension in Visual Studio Code to host.
+
+## Online version
+If you don't want to download everything, there's an online version for you [here](https://roel2407.github.io/Rijksmuseum_overzicht/spa/).
+
 
 ## Rubric
 For this assignment I'm being rated on the folllowing points:
