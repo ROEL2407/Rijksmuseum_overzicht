@@ -2,33 +2,37 @@
 
 ### Table of contents
 Assignment<br />
-[Where is this repository for?](https://github.com/ROEL2407/frontend-data#where-is-this-repository-for)<br />
-[What's the goal of this repository?](https://github.com/ROEL2407/frontend-data#whats-the-goal-of-this-repository)
+[Where is this repository for?](https://github.com/ROEL2407/Rijksmuseum_overzicht#where-is-this-repository-for)<br />
+[What's the goal of this repository?](https://github.com/ROEL2407/Rijksmuseum_overzicht#whats-the-goal-of-this-repository)
 
 Project<br />
-[Installation](https://github.com/ROEL2407/frontend-data#installation)<br />
-[Rubric](https://github.com/ROEL2407/frontend-data#rubric)<br />
-[Commits](https://github.com/ROEL2407/Frontend-Applications/blob/main/README.md#commits)<br />
-[Resources](https://github.com/ROEL2407/frontend-data#resources)<br />
-[License](https://github.com/ROEL2407/frontend-data#license)
+[Usage](https://github.com/ROEL2407/Rijksmuseum_overzicht#usage)<br />
+[Installation](https://github.com/ROEL2407/Rijksmuseum_overzicht#installation)<br />
+[Rubric](https://github.com/ROEL2407/Rijksmuseum_overzicht#rubric)<br />
+[Commits](https://github.com/ROEL2407/Rijksmuseum_overzicht#commits)<br />
+[Resources](https://github.com/ROEL2407/Rijksmuseum_overzicht#resources)<br />
+[License](https://github.com/ROEL2407/Rijksmuseum_overzicht#license)
 
 ## Where is this repository for?
-This repository is for my lessons from tech track from the education Communication and Multimedia Design from the HvA. 
+This repository is for my lessons from the minor Web Development from the HvA. 
 
 ## What's the goal of this repository?
-In this repository I've made a visualization of data fetched from the PokeAPI using D3. This data will be presented in a bar chart.
+In this repository I've made a overview of art object from the Rijksmuseum. My goal of this repo is to learn JavaScript more and understand it a bit better.
+
+## Usage
+With this application you can look through some of the art objects Rijksmuseum has to offer. You can get more information about the pieces and make your own perspectives on it.
 
 ## Installation
 Clone this repository to your own device:
 ```console
-git clone https://github.com/ROEL2407/Frontend-Applications.git
+git clone https://github.com/ROEL2407/Rijksmuseum_overzicht.git
 ```
 
 Use a local server to host the website. I use the Live server extension in Visual Studio Code to host.
 
 ## Rubric
 For this assignment I'm being rated on the folllowing points:
-<img src="https://github.com/ROEL2407/frontend-data/blob/main/images/rubric2.PNG">
+<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/Rubric_wafs.png">
 
 ## Commits
 In this repo I will commit my work. To make this more visible for myself and others I've added little headers to the commit titles:
@@ -44,7 +48,7 @@ In this repo I will commit my work. To make this more visible for myself and oth
 <hr />
 
 ## License
-Usage is provided under the [MIT License](https://github.com/ROEL2407/Functional-Applications/blob/main/LICENSE). See LICENSE for the full details.
+Usage is provided under the [MIT License](https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/LICENSE). See LICENSE for the full details.
 
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
