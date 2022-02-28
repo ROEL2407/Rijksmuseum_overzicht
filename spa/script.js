@@ -37,7 +37,7 @@ function showInfo(data) {
         tempItem = document.createElement('a');
         tempItem.setAttribute("class", "art");
         tempItem.id = item.id;
-        output = '<article><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2></article>';
+        output = '<article><button id="close_popup"><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.maker + '</p><p>' + item.place + '</p><a href="' + item.link + '">' + item.link + '</a></article><div id="bg-fade"></article>';
         tempItem.innerHTML = output;
         display.appendChild(tempItem);
     })
@@ -49,14 +49,20 @@ function click(data) {
             event.preventDefault();
             data.forEach(item => {
                 if(element.id === item.id) {
-                    info_output = '<article class="active"><button id="close_popup"><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.maker + '</p><p>' + item.place + '</p><a href="' + item.link + '">' + item.link + '</a></article><div id="bg-fade"></div>'
-                    this.innerHTML = info_output;
+                    tempTag = document.querySelector("article" );
+                    tempTag.classList.toggle("active");
                 }
             })
-            body.classList.add("popOn");
+            body.classList.toggle("popOn");
         });
     })
 }
+
+    const close = document.getElementById("close_popup");
+
+    close.onclick = function () {
+        
+    }
 
 function search() {
     //Empty results
@@ -87,3 +93,4 @@ search_btn.onclick = function () {
     search.classList.toggle("hidden");
     search_btn.classList.toggle("active");
 }
+

@@ -68,7 +68,7 @@ article.active a {
     overflow: hidden;
 }
 
-#close_popup {
+article.active #close_popup {
     display: flex;
     align-self: flex-end;
     position: relative;
@@ -79,7 +79,7 @@ article.active a {
     margin-right: 10px;
 }
 
-#close_popup div {
+article.active #close_popup div {
     position: absolute;
     height: 10px;
     width: 1px;
@@ -224,4 +224,9 @@ article h2 {
     height: 100vh;
     background-color: black;
     opacity: 50%;
+}
+
+/* --- Article not active --- */
+#close_popup, #bg-fade {
+    display: none;
 }
