@@ -53,7 +53,7 @@ function click(data) {
                     tempTag.classList.toggle("active");
                 }
             })
-            body.classList.toggle("popOn");
+            body.classList.add("popOn");
         });
     })
 }
@@ -61,7 +61,16 @@ function click(data) {
     const close = document.getElementById("close_popup");
 
     close.onclick = function () {
-        
+        Array.from(document.getElementsByClassName("art")).forEach(element => {
+                event.preventDefault();
+                data.forEach(item => {
+                    if(element.id === item.id) {
+                        tempTag = document.querySelector("article" );
+                        tempTag.classList.toggle("active");
+                    }
+                    body.classList.remove("popOn");
+            });
+        })
     }
 
 function search() {
