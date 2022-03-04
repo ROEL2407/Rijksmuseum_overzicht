@@ -37,6 +37,7 @@ function getAndRenderData() {
             display.classList.remove("loading");
             showInfo(artArray);
             showItemInfo(artArray);
+            MakeInfobox(artArray);
         }).catch(error => console.log(error))
 }
 
@@ -47,9 +48,21 @@ function showInfo(data) {
         const tempItem = document.createElement('a');
         tempItem.setAttribute("class", "art");
         tempItem.id = item.id;
-        const output = '<article><button><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.maker + '</p><p>' + item.place + '</p><a href="' + item.link + '">' + item.link + '</a></article><div id="bg-fade"></article>';
+        const output = '<article><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2></article>';
         tempItem.innerHTML = output;
         display.appendChild(tempItem);
+    })
+}
+
+function MakeInfobox(data) {
+    data.forEach(item => {
+        const tempInfobox = document.createElement('article');
+        tempInfobox.setAttribute("class", "infobox");
+        tempInfobox.id = "info-box_" + item.id;
+        const output = '<button><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div>';
+        tempInfobox.innerHTML = output;
+        const infoboxWrapper = document.getElementById("info_boxes");
+        infoboxWrapper.appendChild(tempInfobox);
     })
 }
 
