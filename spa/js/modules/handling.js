@@ -9,18 +9,3 @@ export function searchOpen() {
         search_btn.classList.toggle("active");
     })
 }
-
-export function closeInfo() {
-    const close = document.getElementById("close_popup");
-    close.addEventListener("click", function (event) {
-        Array.from(document.getElementsByClassName("art")).forEach(element => {
-                event.preventDefault();
-                data.forEach(item => {
-                    if(element.id === item.id) {
-                        tempTag = document.querySelector("article" );
-                        tempTag.classList.toggle("active");
-                    }
-                    body.classList.remove("popOn");
-            });
-        })
-    }
