@@ -69,6 +69,7 @@ article.active a {
 }
 
 article.active #close_popup {
+    z-index: 3000;
     display: flex;
     align-self: flex-end;
     position: relative;
@@ -227,6 +228,6 @@ article h2 {
 }
 
 /* --- Article not active --- */
-#close_popup, #bg-fade {
+.art button, #bg-fade {
     display: none;
 }

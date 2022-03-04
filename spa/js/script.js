@@ -13,6 +13,7 @@ getAndRenderData()
 
 const artArray = [];
 const body = document.querySelector("body");
+const html = document.querySelector("html");
 
 function getAndRenderData() {
     const getURL = 'https://www.rijksmuseum.nl/api/nl/collection?key=OoTZzgc6&ps=100'
@@ -35,7 +36,7 @@ function getAndRenderData() {
             display.textContent = "";
             display.classList.remove("loading");
             showInfo(artArray);
-            clickItem(artArray);
+            showItemInfo(artArray);
         }).catch(error => console.log(error))
 }
 
@@ -46,7 +47,7 @@ function showInfo(data) {
         const tempItem = document.createElement('a');
         tempItem.setAttribute("class", "art");
         tempItem.id = item.id;
-        const output = '<article><button id="close_popup"><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.maker + '</p><p>' + item.place + '</p><a href="' + item.link + '">' + item.link + '</a></article><div id="bg-fade"></article>';
+        const output = '<article><button><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.maker + '</p><p>' + item.place + '</p><a href="' + item.link + '">' + item.link + '</a></article><div id="bg-fade"></article>';
         tempItem.innerHTML = output;
         display.appendChild(tempItem);
     })
@@ -76,29 +77,52 @@ function showItemInfo(data) {
     Array.from(document.getElementsByClassName("art")).forEach(element => {
         element.addEventListener("click", function (event) {
             event.preventDefault();
-            data.forEach(item => {
-                if (element.id === item.id) {
-                    tempTag = document.querySelector("article");
-                    tempTag.classList.toggle("active");
-                }
-            })
+
+            const tempTag = this.querySelector("article");
+            const button = tempTag.querySelector("button");
+            tempTag.classList.add("active");
+            button.setAttribute("id", "close_popup");
+            
             body.classList.add("popOn");
+            html.classList.add("popOn");
         });
     })
 }
 
-function closeItemInfo() {
-    const close = document.getElementById("close_popup");
-    close.addEventListener("click", function (event) {
-        Array.from(document.getElementsByClassName("art")).forEach(element => {
-            event.preventDefault();
-            data.forEach(item => {
-                if (element.id === item.id) {
-                    tempTag = document.querySelector("article");
-                    tempTag.classList.toggle("active");
-                }
-                body.classList.remove("popOn");
+
+function closeItemInfo(data) {
+        const close = document.getElementById("close_popup");
+        const active = document.getElementsByClassName("active");
+            close.addEventListener("click", function () {
+                console.log(close);
+            // body.classList.add("popOn");
+            // html.classList.add("popOn");
             });
-        })
+    Array.from(document.getElementsByClassName("art")).forEach(element => {
+        element.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const tempTag = this.querySelector("article");
+            const button = tempTag.querySelector("button");
+            tempTag.classList.add("active");
+            button.setAttribute("id", "close_popup");
+            
+            body.classList.add("popOn");
+            html.classList.add("popOn");
+        });
     })
 }
+// function closeItemInfo() {
+//     const close = document.getElementById("close_popup");
+//     console.log(close);
+//     close.addEventListener("click", function (event) {
+//         Array.from(document.getElementsByClassName("art")).forEach(element => {
+//             tempTag = document.querySelector("article");
+//             if (temptag.classList.contains("active")) {
+//                 tempTag.classList.remove("active");
+//             }
+//             body.classList.remove("popOn");
+//         });
+//     })
+// }
+// closeItemInfo();
