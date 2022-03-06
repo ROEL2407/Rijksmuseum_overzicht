@@ -181,8 +181,8 @@ article.infobox {
     display: flex;
     align-self: flex-end;
     position: relative;
-    height: 1.563em;
-    width: 1.563em;
+    height: 2em;
+    width: 2em;
     border: none;
     background-color: transparent;
     margin-right: 0.625em;
@@ -206,6 +206,7 @@ article.infobox {
 
 .infobox div img {
     height: fit-content;
+    object-fit: scale-down;
     max-height: 45vh;
 }
 

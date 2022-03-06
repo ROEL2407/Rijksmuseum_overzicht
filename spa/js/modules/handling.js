@@ -27,3 +27,11 @@ export function itemClick() {
     }
     window.addEventListener('click', onClick);
 }
+
+export function closeInfo() {
+    const closePopup = document.getElementsByClassName("close_popup");
+    const activeInfobox = document.getElementsByClassName("infobox");
+    closePopup.onclick = function() {
+        activeInfobox.style.display = "none";
+    }
+}
