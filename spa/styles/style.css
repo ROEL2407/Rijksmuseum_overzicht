@@ -29,78 +29,6 @@ a {
     background-color: grey;
 }
 
-/* --- Article state --- */
-article.active {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: scale(1.2);
-    font-size: 14px;
-}
-
-article.active div {
-    margin-top: 0.625em;
-    height: fit-content;
-    width: 90%;
-}
-
-article.active div img {
-    height: fit-content;
-    max-height: 45vh;
-}
-
-article.active h2 {
-    width: fit-content;
-    text-align: center;
-    padding-top: 0.313em;
-    padding-bottom: 0.625em;
-    position: relative;
-    background-image: none;
-}
-
-article.active a {
-    color: black;
-    padding: 0.625em 0em;
-    text-decoration: underline;
-}
-
-.popOn {
-    overflow: hidden;
-}
-
-article.active #close_popup {
-    z-index: 3000;
-    display: flex;
-    align-self: flex-end;
-    position: relative;
-    height: 1.563em;
-    width: 1.563em;
-    border: none;
-    background-color: transparent;
-    margin-right: 0.625em;
-}
-
-article.active #close_popup div {
-    position: absolute;
-    height: 0.625em;
-    width: 1px;
-    margin: 0;
-    background-color: black;
-    left: 50%;
-    bottom: 30%;
-}
-
-#close_popup div:first-of-type {
-    transform: rotate(45deg);
-}
-
-#close_popup div:last-of-type {
-    transform: rotate(135deg);
-}
-
-/* --- end Article state --- */
-
 #search.active {
     background-color: grey;
 }
@@ -131,8 +59,8 @@ header h1 {
 }
 
 #search_btn i.fa-search {
-    width: 3.125em;
-    height: 3.125em;
+    width: 2.125em;
+    height: 2.125em;
     font-size: 25px;
     color: white;
     display: flex;
@@ -148,7 +76,7 @@ main {
 
 #search {
     position: absolute;
-    top: -15px;
+    top: 0em;
     z-index: 1;
     width: 100%;
     padding: 0.625em 0em;
@@ -229,6 +157,81 @@ article h2 {
 }
 
 /* --- Article not active --- */
-.art button, #bg-fade {
+
+
+/* info box */
+article.infobox {
     display: none;
+    position: absolute;
+    top: 2vh;
+    left: 10%;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    background-color: darkgrey;
+}
+
+.infobox button, #bg-fade {
+    display: none;
+}
+
+.infobox .close_popup {
+    z-index: 3000;
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    height: 1.563em;
+    width: 1.563em;
+    border: none;
+    background-color: transparent;
+    margin-right: 0.625em;
+}
+
+.infobox .close_popup div {
+    position: absolute;
+    height: 1.625em;
+    width: 2px;
+    margin: 0;
+    background-color: black;
+    left: 50%;
+    top: 20%;
+}
+
+.infobox div {
+    margin-top: 0.625em;
+    height: fit-content;
+    width: 90%;
+}
+
+.infobox div img {
+    height: fit-content;
+    max-height: 45vh;
+}
+
+.infobox h2 {
+    width: fit-content;
+    text-align: center;
+    padding-top: 0.313em;
+    padding-bottom: 0.625em;
+    position: relative;
+    background-image: none;
+}
+
+.infobox a {
+    color: black;
+    padding: 0.625em 0em;
+    text-decoration: underline;
+}
+
+.popOn {
+    overflow: hidden;
+}
+
+.close_popup div:first-of-type {
+    transform: rotate(45deg);
+}
+
+.close_popup div:last-of-type {
+    transform: rotate(135deg);
 }

@@ -1,11 +1,10 @@
-import {
-    searchOpen
-} from './modules/handling.js';
+import { itemClick, searchOpen } from './modules/handling.js';
 
 const display = document.getElementById('artitems');
 display.textContent = "Loading...";
 
-searchOpen()
+searchOpen();
+itemClick();
 getAndRenderData()
 
 
@@ -36,7 +35,6 @@ function getAndRenderData() {
             display.textContent = "";
             display.classList.remove("loading");
             showInfo(artArray);
-            showItemInfo(artArray);
             MakeInfobox(artArray);
         }).catch(error => console.log(error))
 }
@@ -59,7 +57,7 @@ function MakeInfobox(data) {
         const tempInfobox = document.createElement('article');
         tempInfobox.setAttribute("class", "infobox");
         tempInfobox.id = "info-box_" + item.id;
-        const output = '<button><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div>';
+        const output = '<button class="close_popup"><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.maker + '</p><p>' + item.place + '</p><a href="' + item.link + '" target="_blank">' + item.link + '</a>' ;
         tempInfobox.innerHTML = output;
         const infoboxWrapper = document.getElementById("info_boxes");
         infoboxWrapper.appendChild(tempInfobox);
@@ -85,24 +83,6 @@ function search() {
     showInfo(search);
 }
 
-
-function showItemInfo(data) {
-    Array.from(document.getElementsByClassName("art")).forEach(element => {
-        element.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            const tempTag = this.querySelector("article");
-            const button = tempTag.querySelector("button");
-            tempTag.classList.add("active");
-            button.setAttribute("id", "close_popup");
-            
-            body.classList.add("popOn");
-            html.classList.add("popOn");
-        });
-    })
-}
-
-
 function closeItemInfo(data) {
         const close = document.getElementById("close_popup");
         const active = document.getElementsByClassName("active");
@@ -125,17 +105,3 @@ function closeItemInfo(data) {
         });
     })
 }
-// function closeItemInfo() {
-//     const close = document.getElementById("close_popup");
-//     console.log(close);
-//     close.addEventListener("click", function (event) {
-//         Array.from(document.getElementsByClassName("art")).forEach(element => {
-//             tempTag = document.querySelector("article");
-//             if (temptag.classList.contains("active")) {
-//                 tempTag.classList.remove("active");
-//             }
-//             body.classList.remove("popOn");
-//         });
-//     })
-// }
-// closeItemInfo();

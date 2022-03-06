@@ -9,3 +9,21 @@ export function searchOpen() {
         search_btn.classList.toggle("active");
     })
 }
+
+
+export function itemClick() {
+    let clickId = "";
+    const onClick = (event) => {
+        if ( event.target.classList.contains("art")) {
+          clickId = event.target.id;
+          console.log(clickId);
+        }
+    
+        let idHolder = document.getElementById("info-box_" + clickId);
+        console.log(idHolder);
+        if(idHolder !== undefined){
+                idHolder.style.display = "flex";
+        }
+    }
+    window.addEventListener('click', onClick);
+}
