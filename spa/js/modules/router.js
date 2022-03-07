@@ -1,7 +1,7 @@
 import '../vendor/routie.min.js';
 
-var infoboxes = document.querySelectorAll(".infobox");
-console.log(infoboxes);
+// var infoboxes = document.getElementsByClassName("infobox");
+// console.log(infoboxes);
 export const handleRoutes = () => {
   routie({
     ':id': (id) => {
@@ -11,12 +11,13 @@ export const handleRoutes = () => {
 };
 
 function updateUI(route) {
-  infoboxes.forEach(infobox => {
-    infobox.classList.remove('active');
-    document.getElementsByName("main").classList.remove("popOn");
-  });
   let activeSection = document.querySelector(`[data-route=${route}]`);
   console.log(activeSection);
   activeSection.classList.add('active');
-  document.getElementsByName("main").classList.add("popOn");
+    const closePopup = document.querySelectorAll(".close_popup");
+    closePopup.forEach(function(popUp){
+      popUp.addEventListener("click", function() {
+        activeSection.classList.remove("active");
+      })
+    })
 }

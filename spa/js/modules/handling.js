@@ -21,12 +21,6 @@ export function itemClick() {
           console.log(clickId);
         }
         window.location.hash = clickId;
-        // let idHolder = document.getElementById("info-box_" + clickId);
-        // console.log(idHolder);
-        // if(idHolder !== undefined){
-        //         idHolder.classList.add("active");
-        //         body.classList.add("popOn");
-        // }
     }
     window.addEventListener('click', onClick);
 }

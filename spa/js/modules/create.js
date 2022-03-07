@@ -15,6 +15,7 @@ export function MakeInfobox(data) {
     data.forEach(item => {
         const tempInfobox = document.createElement('article');
         tempInfobox.setAttribute("class", "infobox");
+        tempInfobox.setAttribute("data-route", item.id);
         tempInfobox.id = "info-box_" + item.id;
         const output = '<button class="close_popup"><div></div><div></div></button><div><img src="' + item.img.slice(0, -3) + "=s1000" + '" alt=""></div><h2>' + item.title + '</h2><p>' + item.maker + '</p><p>' + item.place + '</p><a href="' + item.link + '" target="_blank">' + item.link + '</a>' ;
         tempInfobox.innerHTML = output;
