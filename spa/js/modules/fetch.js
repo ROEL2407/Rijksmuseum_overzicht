@@ -1,7 +1,7 @@
 import {MakeInfobox, showInfo } from './create.js';
 import { handleRoutes } from './router.js'; 
 
-export const display = document.getElementById('artitems');
+export const display = document.getElementById('artItems');
 display.textContent = "Loading...";
 
 const artArray = [];

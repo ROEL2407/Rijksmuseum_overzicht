@@ -98,7 +98,7 @@ main {
     border: 2px solid black;
 }
 
-#artitems {
+#artItems {
     z-index: -3;
     padding-top: 1em;
 }
