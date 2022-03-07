@@ -5,7 +5,7 @@ display.textContent = "Loading...";
 
 searchOpen();
 itemClick();
-getAndRenderData()
+getAndRenderData();
 
 
 
@@ -52,7 +52,8 @@ function showInfo(data) {
     })
 }
 
-function MakeInfobox(data) {
+export function MakeInfobox(data) {
+    let infoboxes = [];
     data.forEach(item => {
         const tempInfobox = document.createElement('article');
         tempInfobox.setAttribute("class", "infobox");
@@ -61,6 +62,8 @@ function MakeInfobox(data) {
         tempInfobox.innerHTML = output;
         const infoboxWrapper = document.getElementById("info_boxes");
         infoboxWrapper.appendChild(tempInfobox);
+        infoboxes =+ tempInfobox;
+        console.log(infoboxes);
     })
 }
 
