@@ -1,18 +1,22 @@
 import '../vendor/routie.min.js';
 
+var infoboxes = document.querySelectorAll(".infobox");
+console.log(infoboxes);
 export const handleRoutes = () => {
   routie({
     ':id': (id) => {
-      renderItem(id);
-    }
+      updateUI(id);
+    },
   });
 };
 
 function updateUI(route) {
-  sections.forEach(section => {
-    section.classList.remove('active');
+  infoboxes.forEach(infobox => {
+    infobox.classList.remove('active');
+    document.getElementsByName("main").classList.remove("popOn");
   });
-  activeSection = document.querySelector(`[data-route=${route}]`);
+  let activeSection = document.querySelector(`[data-route=${route}]`);
   console.log(activeSection);
   activeSection.classList.add('active');
+  document.getElementsByName("main").classList.add("popOn");
 }

@@ -1,4 +1,5 @@
-import {MakeInfobox, showInfo } from './create.js'; 
+import {MakeInfobox, showInfo } from './create.js';
+import { handleRoutes } from './router.js'; 
 
 export const display = document.getElementById('artitems');
 display.textContent = "Loading...";
@@ -26,5 +27,6 @@ export function getAndRenderData() {
             display.classList.remove("loading");
             showInfo(artArray);
             MakeInfobox(artArray);
+            handleRoutes();
         }).catch(error => console.log(error))
 }

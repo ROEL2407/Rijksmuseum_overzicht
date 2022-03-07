@@ -1,3 +1,5 @@
+const body = document.getElementsByTagName("main");
+
 export function searchOpen() {
     /* --- get all element for use --- */
     const search_btn = document.getElementById("search_btn");
@@ -19,11 +21,12 @@ export function itemClick() {
           console.log(clickId);
         }
         window.location.hash = clickId;
-        let idHolder = document.getElementById("info-box_" + clickId);
-        console.log(idHolder);
-        if(idHolder !== undefined){
-                idHolder.style.display = "flex";
-        }
+        // let idHolder = document.getElementById("info-box_" + clickId);
+        // console.log(idHolder);
+        // if(idHolder !== undefined){
+        //         idHolder.classList.add("active");
+        //         body.classList.add("popOn");
+        // }
     }
     window.addEventListener('click', onClick);
 }
@@ -32,6 +35,6 @@ export function closeInfo() {
     const closePopup = document.getElementsByClassName("close_popup");
     const activeInfobox = document.getElementsByClassName("infobox");
     closePopup.onclick = function() {
-        activeInfobox.style.display = "none";
+        idHolder.classList.remove("active");
     }
 }
