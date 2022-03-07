@@ -21,14 +21,8 @@ export function itemClick() {
           console.log(clickId);
         }
         window.location.hash = clickId;
+        let idHolder = document.getElementById("info-box_" + clickId);
+        console.log(idHolder);
     }
     window.addEventListener('click', onClick);
-}
-
-export function closeInfo() {
-    const closePopup = document.getElementsByClassName("close_popup");
-    const activeInfobox = document.getElementsByClassName("infobox");
-    closePopup.onclick = function() {
-        idHolder.classList.remove("active");
-    }
 }
