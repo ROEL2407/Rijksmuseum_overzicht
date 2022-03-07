@@ -48,9 +48,11 @@ body header {
     border-bottom: 1px solid black;
     z-index: 2;
 }
-
-header h1 {
+#refresh {
+    color: white;
     flex-grow: 3;
+}
+header h1 {
     text-align: center;
 }
 #search_btn {
@@ -147,8 +149,8 @@ article h2 {
     bottom: 0;
 }
 
-#bg-fade {
-    position: absolute;
+.bg-fade {
+    position: fixed;
     top: -1em;
     width: 100vw;
     height: 100vh;
@@ -162,8 +164,8 @@ article h2 {
 /* info box */
 article.infobox {
     display: none;
-    position: absolute;
-    top: 2vh;
+    position: fixed;
+    top: 8vh;
     left: 10%;
     z-index: 1;
     flex-direction: column;
@@ -235,4 +237,8 @@ article.infobox {
 
 .close_popup div:last-of-type {
     transform: rotate(135deg);
+}
+
+.infobox.active {
+    display: flex;
 }
