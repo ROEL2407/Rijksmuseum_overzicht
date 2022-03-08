@@ -2,10 +2,10 @@ function search() {
     //Empty results
     display.innerHTML = "";
 
-    var input = document.getElementById("inputfield");
+    const input = document.getElementById("inputfield");
 
     //search on input
-    var search = data.filter(function (d) {
+    const search = data.filter(function (d) {
         return (
             d.title.toLowerCase().includes(input.value.toLowerCase()) ||
             d.principalOrFirstMaker.toLowerCase().includes(input.value.toLowerCase())
