@@ -7,6 +7,7 @@ Assignment<br />
 
 Project<br />
 [Usage](https://github.com/ROEL2407/Rijksmuseum_overzicht#usage)<br />
+[Example images](https://github.com/ROEL2407/Rijksmuseum_overzicht#example-images)<br />
 [Installation](https://github.com/ROEL2407/Rijksmuseum_overzicht#installation)<br />
 [Online version](https://github.com/ROEL2407/Rijksmuseum_overzicht#online-version)<br />
 [Rubric](https://github.com/ROEL2407/Rijksmuseum_overzicht#rubric)<br />
