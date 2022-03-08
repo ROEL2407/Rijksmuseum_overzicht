@@ -2,7 +2,7 @@ function search() {
     //Empty results
     display.innerHTML = "";
 
-    const input = document.getElementById("inputfield");
+    const input = document.getElementById("inputField");
 
     //search on input
     const search = data.filter(function (d) {

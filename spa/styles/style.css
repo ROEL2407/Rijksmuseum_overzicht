@@ -79,6 +79,17 @@ main {
     margin-bottom: 1em;
 }
 
+fieldset {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+fieldset label {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
 #search {
     position: absolute;
     top: 0em;
