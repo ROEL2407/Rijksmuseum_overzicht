@@ -5,6 +5,7 @@ export const display = document.getElementById('artItems');
 display.textContent = "Loading...";
 
 const artArray = [];
+/* fetches the data from an api so it can be displayed */
 export function getData() {
     const getURL = 'https://www.rijksmuseum.nl/api/nl/collection?key=OoTZzgc6&ps=100'
     fetch(getURL)
@@ -24,6 +25,7 @@ export function getData() {
         }).catch(error => console.log(error))
 }
 
+/* renders data in multiple functions */
 function renderData(){
     display.textContent = "";
     display.classList.remove("loading");

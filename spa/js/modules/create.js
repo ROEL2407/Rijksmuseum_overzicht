@@ -1,5 +1,6 @@
 import { display } from "./fetch.js";
 
+/* creates a clickable element which can be clicked on to display more information about the art piece */
 export function showInfo(data) {
     data.forEach(item => {
         const tempItem = document.createElement('a');
@@ -11,6 +12,7 @@ export function showInfo(data) {
     })
 }
 
+/* creates an infobox which can be opened to display more information about the art piece */
 export function MakeInfobox(data) {
     data.forEach(item => {
         const tempInfobox = document.createElement('article');
