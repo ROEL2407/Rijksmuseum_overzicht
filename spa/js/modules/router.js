@@ -1,10 +1,13 @@
 import '../vendor/routie.min.js';
 
-export const handleRoutes = () => {
+export function handleRoutes() {
   routie({
+    '': () => {
+      updateUI();
+    },
     ':id': (id) => {
       updateUI(id);
-    },
+    }
   });
 };
 
