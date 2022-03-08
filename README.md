@@ -10,7 +10,7 @@ Project<br />
 [Example images](https://github.com/ROEL2407/Rijksmuseum_overzicht#example-images)<br />
 [Installation](https://github.com/ROEL2407/Rijksmuseum_overzicht#installation)<br />
 [Online version](https://github.com/ROEL2407/Rijksmuseum_overzicht#online-version)<br />
-[Activity Diagram](https://github.com/ROEL2407/Rijksmuseum_overzicht#activty_diagram(s))<br />
+[Activity Diagram](https://github.com/ROEL2407/Rijksmuseum_overzicht#activity-diagrams)<br />
 [Rubric](https://github.com/ROEL2407/Rijksmuseum_overzicht#rubric)<br />
 [Commits](https://github.com/ROEL2407/Rijksmuseum_overzicht#commits)<br />
 [Resources](https://github.com/ROEL2407/Rijksmuseum_overzicht#resources)<br />
