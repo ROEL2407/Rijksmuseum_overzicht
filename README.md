@@ -10,6 +10,7 @@ Project<br />
 [Example images](https://github.com/ROEL2407/Rijksmuseum_overzicht#example-images)<br />
 [Installation](https://github.com/ROEL2407/Rijksmuseum_overzicht#installation)<br />
 [Online version](https://github.com/ROEL2407/Rijksmuseum_overzicht#online-version)<br />
+[Activity Diagram](https://github.com/ROEL2407/Rijksmuseum_overzicht#activty_diagram(s))<br />
 [Rubric](https://github.com/ROEL2407/Rijksmuseum_overzicht#rubric)<br />
 [Commits](https://github.com/ROEL2407/Rijksmuseum_overzicht#commits)<br />
 [Resources](https://github.com/ROEL2407/Rijksmuseum_overzicht#resources)<br />
@@ -38,6 +39,8 @@ Use a local server to host the website. I use the Live server extension in Visua
 
 ## Online version
 If you don't want to download everything, there's an online version for you [here](https://roel2407.github.io/Rijksmuseum_overzicht/spa/).
+
+## Activity Diagram(s)
 
 
 ## Rubric
