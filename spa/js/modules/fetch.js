@@ -5,7 +5,7 @@ export const display = document.getElementById('artItems');
 display.textContent = "Loading...";
 
 const artArray = [];
-export function getAndRenderData() {
+export function getData() {
     const getURL = 'https://www.rijksmuseum.nl/api/nl/collection?key=OoTZzgc6&ps=100'
     fetch(getURL)
         .then(response => response.json())
@@ -18,14 +18,16 @@ export function getAndRenderData() {
                     img: art.webImage.url,
                     place: art.productionPlaces,
                     link: art.links.web
-
                 });
             })
-
-            display.textContent = "";
-            display.classList.remove("loading");
-            showInfo(artArray);
-            MakeInfobox(artArray);
-            handleRoutes();
+            renderData();
         }).catch(error => console.log(error))
+}
+
+function renderData(){
+    display.textContent = "";
+    display.classList.remove("loading");
+    showInfo(artArray);
+    MakeInfobox(artArray);
+    handleRoutes();
 }
