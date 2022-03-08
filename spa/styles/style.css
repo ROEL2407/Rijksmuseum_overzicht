@@ -51,6 +51,8 @@ body header {
 #refresh {
     color: white;
     flex-grow: 3;
+    border: none;
+    cursor:default;
 }
 header h1 {
     text-align: center;
@@ -58,6 +60,7 @@ header h1 {
 #search_btn {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 #search_btn i.fa-search {
@@ -114,6 +117,7 @@ main {
 
 .art {
     position: relative;
+    cursor: pointer;
 }
 
 article {
@@ -188,6 +192,7 @@ article.infobox {
     border: none;
     background-color: transparent;
     margin-right: 0.625em;
+    cursor: pointer;
 }
 
 .infobox .close_popup div {
