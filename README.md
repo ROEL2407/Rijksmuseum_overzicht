@@ -43,6 +43,7 @@ If you don't want to download everything, there's an online version for you [her
 ## Activity Diagram(s)
 V1
 <img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/activity_diagramv1.jpg">
+<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/activity_diagramv2.jpg">
 V2
 
 ## Rubric
@@ -64,24 +65,3 @@ In this repo I will commit my work. To make this more visible for myself and oth
 
 ## License
 Usage is provided under the [MIT License](https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/LICENSE). See LICENSE for the full details.
-
-
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
