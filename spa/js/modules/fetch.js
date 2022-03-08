@@ -10,7 +10,6 @@ export function getAndRenderData() {
     fetch(getURL)
         .then(response => response.json())
         .then(response => {
-            console.log(response)
             response.artObjects.forEach(art => {
                 artArray.push({
                     id: art.id,
