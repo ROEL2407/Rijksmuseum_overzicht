@@ -117,6 +117,19 @@ fieldset label {
     padding-top: 1em;
 }
 
+#reload {
+    padding: 0.5em;
+    background-color: white;
+    margin-top: 1em;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#reload:focus {
+    background-color: #999;
+}
+
 .loading {
     color: white;
     width: 100%;
