@@ -41,7 +41,9 @@ Use a local server to host the website. I use the Live server extension in Visua
 If you don't want to download everything, there's an online version for you [here](https://roel2407.github.io/Rijksmuseum_overzicht/spa/).
 
 ## Activity Diagram(s)
+V1
 <img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/activity_diagramv1.jpg">
+V2
 
 ## Rubric
 For this assignment I'm being rated on the folllowing points:
