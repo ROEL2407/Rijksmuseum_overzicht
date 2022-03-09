@@ -1,4 +1,4 @@
-# Frontend-Applications
+# Rijksmuseum overzicht
 
 ### Table of contents
 Assignment<br />
