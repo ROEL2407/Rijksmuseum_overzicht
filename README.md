@@ -26,8 +26,8 @@ In this repository I've made a overview of art object from the Rijksmuseum. My g
 With this application you can look through some of the art objects Rijksmuseum has to offer. You can get more information about the pieces and make your own perspectives on it.
 
 ## Example images
-<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/voorbeeld_overzicht.PNG">
-<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/voorbeeld_detail.PNG">
+<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/voorbeeld_overzicht.PNG?raw=true">
+<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/voorbeeld_detail.PNG?raw=true">
 
 ## Installation
 Clone this repository to your own device:
@@ -42,13 +42,13 @@ If you don't want to download everything, there's an online version for you [her
 
 ## Activity Diagram(s)
 V1
-<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/activity_diagramv1.jpg">
-<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/activity_diagramv2.jpg">
+<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/activity_diagramv1.jpg?raw=true">
+<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/activity_diagramv2.jpg?raw=true">
 V2
 
 ## Rubric
 For this assignment I'm being rated on the folllowing points:
-<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/Rubric_wafs.png">
+<img src="https://github.com/ROEL2407/Rijksmuseum_overzicht/blob/main/wiki_images/Rubric_wafs.png?raw=true">
 
 ## Commits
 In this repo I will commit my work. To make this more visible for myself and others I've added little headers to the commit titles:
